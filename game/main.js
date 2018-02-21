@@ -3,6 +3,9 @@ import Cell from './cell.js';
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 
+//test test test
+
+
 //Global variables
 const rows = 8;
 const cols = 8;
