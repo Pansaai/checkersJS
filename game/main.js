@@ -10,8 +10,6 @@ const boardHeight = 700;
 const boardWidth = 700;
 const size = 88;
 
-//test
-
 // Game Variables
 let grid;
 let mousePos = [0,0];
