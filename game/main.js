@@ -24,10 +24,10 @@ let selectedCol;
 let selectedRow;
 
 // pieces
-let empty = 0;
-let black = 1;
-let white = 2;
-let king = 3;
+const empty = 0;
+const black = 1;
+const white = 2;
+const king = 3;
 
 let pieces = [
   [0,1,0,1,0,1,0,1],
@@ -249,6 +249,8 @@ function pieceDrop(){
       // set new position to selected Piece
       pieces[mousePos[1]][mousePos[0]] = selectedPiece;
     }
+  }  else if ((becomesKing && isJump) || (becomesKing && isDiagonal)){
+    pieces[mousePos[1]][mousePos[0]] = 3;
   }
 
   // If Illegal Move Set position Back to start Position
