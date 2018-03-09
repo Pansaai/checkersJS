@@ -2,8 +2,13 @@ import Cell from './cell.js';
 
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
+const start = document.getElementById('startButton');
+const splash = document.getElementById('splashScreen');
 
-//test test test
+start.addEventListener('click', () => {
+  splash.style.display = 'none';
+  canvas.style.display = 'block';
+}, false);
 
 
 //Global variables
@@ -52,7 +57,7 @@ render();
 /*************************************************************/
 
 
-  function make2DArray(cols,rows){
+function make2DArray(cols,rows){
   let arr = new Array(cols);
   for(let i = 0; i < arr.length; i++){
     arr[i] = new Array(rows);
